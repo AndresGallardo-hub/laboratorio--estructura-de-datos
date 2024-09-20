@@ -23,3 +23,20 @@
 #todo eso en un string al que debes dar formato. Recuerda que conocimos dos maneras
 #de hacerlo y cualquiera de ellas es válida.
 #No dejes de intentar resolverlo, y si se te complica, en la próxima lección lo hacemos juntos.
+nombreEmpleado = input("dime tu nombre ")
+
+
+ventasdelmes = 0
+
+ventasdelmes=float(input ( "por favor ingrese las ventas del mes:" ))
+gananciadelmes = (ventasdelmes*13/100)
+mensaje = print(f"las ventas del mes son {ventasdelmes} su ganancia es $ {gananciadelmes} ")
+print(mensaje)
+#se puede gacer todas las operaciones en una linea , no hacer:
+#num1 = (ventasdelmes)
+#num2 = 13
+#num3 = 100
+#resultado1 = print(num1 * num2)
+#resultado2 = print(resultado1 / num3)
+
+
