@@ -1,29 +1,27 @@
 
-#nombre_de_estudiante = input("ingrese el nombre del estudiante: ")
+
 print("bienvenidoa su sistema , un honor trabajar con usted  ")
 nombres = []
 
 while True:
    nombre_est = input("ingrese el  nombre deseado   : ")
-   #print(list(nombres))
+   
    nombre_est = nombre_est.lower()
    if nombre_est ==  "fin":
       break
    elif nombre_est ==  "repetir" :
-      #nombre_est = nombres.sort()
+      
       print(nombres)
       
-      # mas_largo = max(nombres,key=len)
-      # mas_corto = min(nombres,key=len)
-      # print(mas_largo)
-      # print(mas_corto)
-      # print(f"el nombre mas largo es : {mas_largo}")
-      # print(f"el nombre mas corto es : {mas_corto}")
-      
-   elif nombre_est : 
+   elif nombre_est.replace(" ","").isalpha():
       nombres.append(nombre_est)
-   elif nombre_est :
-      nombres.isspace(nombre_est)
+   else :
+    print("no se permiten numeros o espacio")
+   #elif nombre_est : 
+      #nombres.append(nombre_est)
+   
+  # elif nombre_est :
+      #nombres.isspace(nombre_est)
    
 print("ahora te presentare un menu con opciones que vos quieras seleccionar ")
 while True :
@@ -37,33 +35,29 @@ while True :
       nombres.sort()
       print(nombres)
    elif opciones == 3:
-      mas_largo = max(nombres,key=len)
-      mas_corto = min(nombres,key=len)
-      #print(mas_largo)
-      #print(mas_corto)
-      print(f"el nombre mas largo es : {mas_largo}")
-      print(f"el nombre mas corto es : {mas_corto}") 
+      mas_corto = min(nombres)
+      mas_largo = max(nombres)
+      
+      print(f"el nombre mas corto es : {mas_corto}")
+      print(f"el nombre mas largo es : {mas_largo}") 
    elif opciones == 4:
       voc = ["a","e","i","o","u"]
+      con = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
       vocales = 0
       consonantes = 0
-      #vocales_finales = 0
-      #consonantes_finales = 0
-      if nombres == voc  :
-         vocales == vocales +1
-         
-      else :
-         consonantes == consonantes +1   
-      print (f"la cantidad de vocales es de {vocales} ,  la cantidad de consonantes es de {consonantes}")    
-         
-      # for nombre in nombres :
-      #  for voc in nombre:
-      #    if voc == nombre:
-      #       vocales += 1
-      #       print(vocales)
-      #    else :
-      #       consonantes += 1 
-      #    print (consonantes)       
+      
+      for alumno in nombres :
+         for vocal in voc:
+          vocales = vocales + alumno.count(vocal)
+      print(vocales)
+      for alumno in nombres :
+         for consonante in con :
+            consonantes = consonantes + alumno.count(consonante)
+      print(consonantes)      
+      # for alumno in nombres :
+      #    alumno.count("b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z")
+      #    consonantes = consonantes + alumno.count("b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z")
+      #    print(consonantes) 
    elif opciones == 5 :
       for nombre in nombres :
         num_palabras = len(nombre.split())   
