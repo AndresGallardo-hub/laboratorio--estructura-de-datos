@@ -1,16 +1,16 @@
 import random
 
-# Lista de palabras secretas
+
 palabras_secretas = ["casa", "perro", "gato", "coche", "avion"]
 
 def ahorcado():
-    # Elegir palabra secreta aleatoria
+    
     palabra_secreta = random.choice(palabras_secretas)
     
-    # Inicializar guiones para la palabra secreta
+     
     guiones = ["_"] * len(palabra_secreta)
     
-    # Inicializar vidas
+    
     vidas = 6
     
     print("¡Bienvenido al juego del ahorcado!")
@@ -40,18 +40,3 @@ def ahorcado():
 ahorcado()
 
 
-# *Funcionamiento:*
-
-# 1. Se elige una palabra secreta aleatoria de la lista.
-# 2. Se inicializan guiones para representar la palabra secreta.
-# 3. Se establecen 6 vidas.
-# 4. En cada turno, el jugador ingresa una letra.
-# 5. Si la letra está en la palabra secreta, se reemplaza el guión correspondiente.
-# 6. Si la letra es incorrecta, se resta una vida.
-# 7. El juego continúa hasta que se adivine la palabra o se agoten las vidas.
-
-# *Notas:*
-
-# - El programa utiliza una lista de palabras secretas predefinidas.
-# - La palabra secreta se elige aleatoriamente en cada partida.
-# - El juego no tiene elementos gráficos, pero muestra el estado actual de la palabra y las vidas restantes.
