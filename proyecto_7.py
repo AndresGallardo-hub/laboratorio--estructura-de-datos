@@ -64,11 +64,11 @@ def inicio():
              cliente.Retirar(cantidad)
         
          elif opcion == "3":
-             print(cliente)  # Imprime los datos del cliente con su balance
+             print(cliente)  
         
          elif opcion == "4":
              print("¡Gracias por usar el sistema!")
-             break  # Salir del loop y terminar el programa
+             break   
         
         else:
              print("Opción no válida. Intenta nuevamente.")
