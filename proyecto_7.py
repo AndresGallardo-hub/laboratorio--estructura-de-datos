@@ -49,56 +49,41 @@ def inicio():
         
           opciones = input("Selecciona una opción (1/2/3/4): ")
 
-        #   opciones = input(""" 1. depositar dinero: $
-        #                   2. retirar dinero: $
-        #                   3. ver saldo : $
-        #                   4. salir : """)
-        #   opciones = int(opciones)
-#           if opcion == "1":
-#             cantidad = float(input("¿Cuánto deseas depositar? $"))
-#             cliente.Depositar(cantidad)
+          opciones = input(""" 1. depositar dinero: $
+                          2. retirar dinero: $
+                           3. ver saldo : $
+                           4. salir : """)
+           opciones = int(opciones)
+           if opcion == "1":
+#
+             cantidad = float(input("¿Cuánto deseas depositar? $"))
+            cliente.Depositar(cantidad)
         
-#         elif opcion == "2":
-#             cantidad = float(input("¿Cuánto deseas retirar? $"))
-#             cliente.Retirar(cantidad)
+         elif opcion == "2":
+             cantidad = float(input("¿Cuánto deseas retirar? $"))
+             cliente.Retirar(cantidad)
         
-#         elif opcion == "3":
-#             print(cliente)  # Imprime los datos del cliente con su balance
+         elif opcion == "3":
+             print(cliente)  # Imprime los datos del cliente con su balance
         
-#         elif opcion == "4":
-#             print("¡Gracias por usar el sistema!")
-#             break  # Salir del loop y terminar el programa
+         elif opcion == "4":
+             print("¡Gracias por usar el sistema!")
+             break  # Salir del loop y terminar el programa
         
-#         else:
-#             print("Opción no válida. Intenta nuevamente.")
-
-# # Ejecutar el programa
-# inicio()
+        else:
+             print("Opción no válida. Intenta nuevamente.")
 
 
+inicio()
 
 
 
 
 
-#          if opciones == 1 :
-#                 cantidad = float(input("¿Cuánto deseas depositar? $"))
-#                 print(cantidad)
-#           elif opciones == 2 :
-#                 cantidad = float(input("¿Cuánto deseas retirar? $"))
-#                 print(cantidad)
-#           elif opciones == 3 :
-#                 print(cliente)
-#           elif opciones == 4 :
-#                print("¡gracias por elegir nuestro banco ! nos vemos en la proxima")
-#                break
-#           else:
-#                print("por favor seleccione una opcion valida")
-# inicio()
-               
-             
-          
-    
+
+
+
+
      
 
      
